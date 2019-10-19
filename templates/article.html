@@ -1,0 +1,14 @@
+<!--  project -- LC101:blogx -->
+<!--  program -- article.html -->
+<!--  author -- George A. Burns -->
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+	<h1>{{article.title}}</h1>
+	<h3>Written by {{article.username}} on {{article.dated}}</h3>
+	<hr>
+	<h4>{Text of Article:</h4>
+	<h3>{{article.body | safe}}</h3> 
+{% endblock %}
